@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-public class SumaActivity extends AppCompatActivity {
+public class RestaActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextY;
@@ -19,7 +19,7 @@ public class SumaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_resta);
         editTextX = findViewById(R.id.editTextNumberX );
         editTextY = findViewById(R.id.editTextNumberY );
         editTextTotal = findViewById(R.id.editTextNumberTotal );
