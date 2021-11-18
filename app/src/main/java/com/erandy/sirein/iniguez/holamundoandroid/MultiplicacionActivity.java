@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RestaActivity extends AppCompatActivity {
+public class MultiplicacionActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextY;
@@ -17,7 +17,7 @@ public class RestaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resta);
+        setContentView(R.layout.activity_multiplicacion);
         editTextX = findViewById(R.id.editTextNumberX );
         editTextY = findViewById(R.id.editTextNumberY );
         editTextTotal = findViewById(R.id.editTextNumberTotal );
@@ -42,23 +42,12 @@ public class RestaActivity extends AppCompatActivity {
 
     }
 
-    private void realizaOperacion()
-    {
+    private void realizaOperacion() {
         int total = 0;
-        if( editTextX.getText().toString() != null )
-        {
-            if( isEntero( editTextX.getText().toString() ) )
-            {
-                total = getEntero( editTextX.getText().toString() );
-            }
-        }
-        if( editTextY.getText().toString() != null )
-        {
-            if( isEntero( editTextY.getText().toString() ) )
-            {
-                total -= getEntero( editTextY.getText().toString() );
-            }
-        }
+        if (editTextX.getText().toString() != null || editTextY.getText().toString() != null)
+            if (isEntero(editTextX.getText().toString())||isEntero(editTextY.getText().toString()))
+                total = (getEntero(editTextX.getText().toString()))*(getEntero(editTextY.getText().toString()));
+            else{}else{}
         editTextTotal.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
         editTextTotal.setEnabled( false );
     }
