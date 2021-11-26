@@ -1,11 +1,12 @@
 package com.erandy.sirein.iniguez.holamundoandroid;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 public class RestaActivity extends AppCompatActivity {
 
@@ -13,11 +14,10 @@ public class RestaActivity extends AppCompatActivity {
     private EditText editTextY;
     private EditText editTextTotal;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resta);
+        setContentView(R.layout.activity_suma);
         editTextX = findViewById(R.id.editTextNumberX );
         editTextY = findViewById(R.id.editTextNumberY );
         editTextTotal = findViewById(R.id.editTextNumberTotal );
@@ -92,6 +92,5 @@ public class RestaActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         return false;
-
     }
 }

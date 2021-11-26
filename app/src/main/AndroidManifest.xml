@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundoAndroid">
         <activity
+            android:name=".PromedioActivity"
+            android:exported="false" />
+        <activity
             android:name=".DivisionActivity"
             android:exported="false" />
         <activity

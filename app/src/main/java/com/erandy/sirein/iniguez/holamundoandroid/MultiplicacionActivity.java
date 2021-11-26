@@ -13,11 +13,10 @@ public class MultiplicacionActivity extends AppCompatActivity {
     private EditText editTextY;
     private EditText editTextTotal;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multiplicacion);
+        setContentView(R.layout.activity_suma);
         editTextX = findViewById(R.id.editTextNumberX );
         editTextY = findViewById(R.id.editTextNumberY );
         editTextTotal = findViewById(R.id.editTextNumberTotal );
@@ -81,6 +80,5 @@ public class MultiplicacionActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         return false;
-
     }
 }
